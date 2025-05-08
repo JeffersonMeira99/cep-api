@@ -1,0 +1,23 @@
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      DATABASE_URL: 'mysql://bd-user-cep:cep1234@mysql:3307/bd_cep'
+    depends_on:
+      - mysql
+
+
+  mysql:
+    container_name: cep-mysql
+    image: mysql:8.0.39
+    environment:
+      MYSQL_ROOT_PASSWORD: "cep1234"
+      MYSQL_DATABASE: "bd_cep"
+      MYSQL_USER: "bd-user-cep"
+      MYSQL_PASSWORD: "cep1234"
+    ports:
+      - "3307:3306"
+
+
