@@ -69,11 +69,11 @@ O backend estará disponível em `http://localhost:3003`.
 
 ## 🗃️ Scripts Úteis
 
-| Comando         | Descrição                  |
-| --------------- | -------------------------- | ------------------------------------------ |
-| `npm run dev`   | Inicia servidor            |
-| `npm run build` | Compila TypeScript         | ! Importante ter pra compilar typescript ! |
-| `npm run test`  | Executa os testes com Jest |
+| Comando         | Descrição                                          |
+| --------------- | -------------------------------------------------- |
+| `npm run dev`   | Inicia o servidor em ambiente de desenvolvimento   |
+| `npm run build` | Compila os arquivos TypeScript para a pasta `dist` |
+| `npm run test`  | Executa os testes automatizados com Jest           |
 
 ---
 
